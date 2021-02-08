@@ -31,11 +31,13 @@ import React from "react"
 import ReactDOM from "react-dom"
 
 import AddReaction, { initReactionSelector } from "./components/add_reaction"
+import ContextMenu from "./components/context_menu"
 
 const {AppSubUrl, StaticUrlPrefix, csrf} = window.config;
 
 var blocks = {
   add_reaction: AddReaction,
+  context_menu: ContextMenu,
 }
 
 const render_blocks = () => {
